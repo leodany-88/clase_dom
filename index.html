@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Bedex</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" media="screen" href="index.css" />
+    <script src="index.js"></script>
+</head>
+<body>
+    <!-- Header nav -->
+    
+    <header>
+            <div id="main-header-container">
+                <div id="main-logo">
+                    <img id="logo" src="./images/logo.png"/>
+                </div>
+                <div id="main-search">
+                    <div class="main-search-element"><input placeholder="buscar" type="text"></input></div>             
+                </div>
+            </div>
+            <nav>       
+                <div id="main-menu">
+                    <a href="index.html" id="nav-link">Inicio</a><div class="main-menu-separator"/></div>
+                    <a href="#" id="nav-link">Pokédex</a><div class="main-menu-separator"/></div>
+                    <a href="#" id="nav-link">Acerca de</a><div class="main-menu-separator"/></div>
+                </div>   
+            </nav>
+        </header>
+
+    <!-- Pokedex list -->
+    <div class="container">
+        <section class="pokedex-list">
+            <div id="pokedex-list">
+                <!-- Here the pokemon list is rendered -->
+            </div>
+        </section>
+
+        <section id="loading-alert" class="extra-element">
+            <div>
+                Cargando...
+            </div>
+        </section>
+    </div>
+
+    <footer id="page-footer">
+            ©BeDex Copyright 2018
+    </footer>     
+
+    <script>
+        initializeDummyPokedex();
+        //fetchPokedex(initialURL);
+    </script>
+</body>
+</html>
